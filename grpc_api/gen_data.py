@@ -85,7 +85,7 @@ def final_score(data, num1, index_dict):
 
 
 def transform_data():
-    Financial_data = pd.read_excel(r'C:\Users\Administrator\Desktop\cp_hulimin\thrif_api\Financial_data.xlsx', 'sheet1')
+    Financial_data = pd.read_excel('Financial_data.xlsx', 'sheet1')
     # print(Financial_data)
     index_dict = {'偿债能力': ['流动比率', '速动比率'],
                   '营运能力': ['应收账款周转率', '存货周转率', '流动资产周转率'],
@@ -98,7 +98,7 @@ def transform_data():
 
 
 def transform_post():
-    Financial_data = pd.read_excel(r'C:\Users\Administrator\Desktop\cp_hulimin\thrif_api\Financial_data.xlsx', 'sheet1')
+    Financial_data = pd.read_excel('Financial_data.xlsx', 'sheet1')
     cols = list(Financial_data.columns)
     values = Financial_data.values
     d = {}
@@ -108,7 +108,7 @@ def transform_post():
 
 
 if __name__ == '__main__':
-    Financial_data = pd.read_excel(r'C:\Users\Administrator\Desktop\cp_hulimin\thrif_api\Financial_data.xlsx', 'sheet1')
+    Financial_data = pd.read_excel('Financial_data.xlsx', 'sheet1')
     index_dict = {'偿债能力': ['流动比率', '速动比率'],
                   '营运能力': ['应收账款周转率', '存货周转率', '流动资产周转率'],
                   '盈利能力': ['销售毛利率', '净资产收益率', '总资产净利润'],
